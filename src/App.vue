@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
-import HeaderLogo from './components/HeaderLogo.vue';
+import { RouterView } from 'vue-router';
+import HeaderLogo from '@/components/HeaderLogo.vue';
+import NavLink from '@/components/NavLink.vue';
 </script>
 
 <template>
@@ -11,9 +12,9 @@ import HeaderLogo from './components/HeaderLogo.vue';
       >
         <HeaderLogo />
         <nav class="flex items-center gap-4 text-2xl leading-none">
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/projects">Projects</RouterLink>
-          <RouterLink to="/contact">Contact</RouterLink>
+          <NavLink :to="{ name: 'home' }">Home</NavLink>
+          <NavLink :to="{ name: 'projects' }">Projects</NavLink>
+          <NavLink :to="{ name: 'contact' }">Contact</NavLink>
         </nav>
       </div>
     </header>
