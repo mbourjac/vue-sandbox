@@ -18,8 +18,6 @@ import NavLink from '@/components/NavLink.vue';
         </nav>
       </div>
     </header>
-    <main class="grow px-5 py-3.5">
-      <RouterView />
-    </main>
+    <RouterView />
   </div>
 </template>
