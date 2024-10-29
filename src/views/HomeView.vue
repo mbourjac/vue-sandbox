@@ -1,4 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SlideUpAnimation from '@/components/SlideUpAnimation.vue';
+import { ref } from 'vue';
+
+const headingText = ref([
+  'Lorem ipsum dolor, sit amet',
+  'consectetur adipisicing elit.',
+  'Provident, veritatis. Nihil illo vel',
+  'ipsum rem in repellat saepe rerum.',
+]);
+</script>
 
 <template>
   <div class="relative flex grow">
@@ -6,9 +16,14 @@
       <section
         class="relative flex h-[calc(100vh-3.375rem)] flex-col justify-between overflow-auto border-r border-black p-5 pb-[3.375rem]"
       >
-        <h1 class="indent-[8vw] text-[3.95vw] font-bold leading-tight">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident,
-          veritatis. Nihil illo vel ipsum rem in repellat saepe rerum.
+        <h1 class="text-[3.95vw] font-bold leading-[1.15]">
+          <template v-for="(line, index) in headingText" :key="index">
+            <SlideUpAnimation
+              :customClass="index === 0 ? 'indent-[8vw]' : undefined"
+            >
+              {{ line }}
+            </SlideUpAnimation>
+          </template>
         </h1>
         <div
           class="bottom-0 left-0 right-0 mb-[13vw] mt-[10vw] pb-4 md:absolute md:mx-5 md:mb-[17.5vw] md:pb-0 lg:mb-[16vw] xl:mb-[14.5vw] 2xl:mb-[13.75vw]"
