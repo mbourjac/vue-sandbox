@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import SlideUpAnimation from '@/components/SlideUpAnimation.vue';
 import { ref } from 'vue';
+import { useRouteTransition } from '@/composables/use-route-transition';
 
 const headingText = ref([
   'Lorem ipsum dolor, sit amet',
@@ -8,10 +9,12 @@ const headingText = ref([
   'Provident, veritatis. Nihil illo vel',
   'ipsum rem in repellat saepe rerum.',
 ]);
+
+const { isRouteTransition, page } = useRouteTransition();
 </script>
 
 <template>
-  <div class="relative flex grow">
+  <div ref="page" class="relative flex grow">
     <main class="grid grow grid-cols-[7fr_3fr]">
       <section
         class="relative flex h-[calc(100vh-3.375rem)] flex-col justify-between overflow-auto border-r border-black p-5 pb-[3.375rem]"
@@ -20,6 +23,7 @@ const headingText = ref([
           <template v-for="(line, index) in headingText" :key="index">
             <SlideUpAnimation
               :customClass="index === 0 ? 'indent-[8vw]' : undefined"
+              :isExiting="isRouteTransition"
             >
               {{ line }}
             </SlideUpAnimation>
