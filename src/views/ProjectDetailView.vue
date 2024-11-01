@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>Projects</h1>
+  <div>ProjectDetailView</div>
 </template>
