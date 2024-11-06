@@ -1,8 +1,10 @@
 <script setup lang="ts">
-const { slug, isActive, isRouteTransition } = defineProps<{
+import SlideUpAnimation from '@/components/SlideUpAnimation.vue';
+
+const { slug, isActive, isExiting } = defineProps<{
   slug: string;
   isActive?: boolean;
-  isRouteTransition: boolean;
+  isExiting: boolean;
 }>();
 </script>
 
@@ -21,9 +23,7 @@ const { slug, isActive, isRouteTransition } = defineProps<{
       ]"
     ></span>
     <span class="relative">
-      <SlideUpAnimation :is-exiting="isRouteTransition"
-        >Read more</SlideUpAnimation
-      >
+      <SlideUpAnimation :is-exiting="isExiting">Read more</SlideUpAnimation>
     </span>
   </RouterLink>
 </template>

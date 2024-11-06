@@ -39,7 +39,7 @@ const isLinkActive = ref(false);
     <ProjectLink
       :slug="project.slug"
       :is-active="isLinkActive"
-      :is-route-transition="isRouteTransition"
+      :is-exiting="isRouteTransition"
     />
   </article>
 </template>

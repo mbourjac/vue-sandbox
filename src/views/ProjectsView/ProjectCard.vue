@@ -41,7 +41,7 @@ const { slug, title, subtitle } = project;
             >
           </p>
         </div>
-        <ProjectLink :slug="slug" :is-route-transition="isRouteTransition" />
+        <ProjectLink :slug="slug" :is-exiting="isRouteTransition" />
       </div>
     </RouterLink>
   </article>
