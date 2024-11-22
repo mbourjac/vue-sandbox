@@ -12,6 +12,7 @@ export const PROJECTS = [
       'Sequi Minima Quia',
       'Hic Provident',
     ],
+    images: ['', '', '', '', '', ''],
   },
   {
     title: 'Qui facilis provident amet',
@@ -26,6 +27,7 @@ export const PROJECTS = [
       'Sequi Minima Quia',
       'Hic Provident',
     ],
+    images: ['', '', '', '', '', ''],
   },
   {
     title: 'Suscipit reiciendis sit',
@@ -40,6 +42,7 @@ export const PROJECTS = [
       'Sequi Minima Quia',
       'Hic Provident',
     ],
+    images: ['', '', '', '', '', ''],
   },
   {
     title: 'Dolores incidunt delectus',
@@ -54,6 +57,7 @@ export const PROJECTS = [
       'Sequi Minima Quia',
       'Hic Provident',
     ],
+    images: ['', '', '', '', '', ''],
   },
   {
     title: 'Accusantium suscipit animi vel',
@@ -68,6 +72,7 @@ export const PROJECTS = [
       'Sequi Minima Quia',
       'Hic Provident',
     ],
+    images: ['', '', '', '', '', ''],
   },
   {
     title: 'Temporibus quas a similique',
@@ -82,6 +87,7 @@ export const PROJECTS = [
       'Sequi Minima Quia',
       'Hic Provident',
     ],
+    images: ['', '', '', '', '', ''],
   },
   {
     title: 'Numquam illum aperiam',
@@ -96,6 +102,7 @@ export const PROJECTS = [
       'Sequi Minima Quia',
       'Hic Provident',
     ],
+    images: ['', '', '', '', '', ''],
   },
   {
     title: 'Maxime commodi sapiente',
@@ -110,6 +117,7 @@ export const PROJECTS = [
       'Sequi Minima Quia',
       'Hic Provident',
     ],
+    images: ['', '', '', '', '', ''],
   },
   {
     title: 'Repellendus totam iusto',
@@ -124,6 +132,7 @@ export const PROJECTS = [
       'Sequi Minima Quia',
       'Hic Provident',
     ],
+    images: ['', '', '', '', '', ''],
   },
   {
     title: 'Provident iste suscipit',
@@ -138,5 +147,6 @@ export const PROJECTS = [
       'Sequi Minima Quia',
       'Hic Provident',
     ],
+    images: ['', '', '', '', '', ''],
   },
 ];
