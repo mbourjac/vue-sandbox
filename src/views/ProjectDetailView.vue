@@ -4,6 +4,7 @@ import { useRouteTransition } from '@/composables/use-route-transition';
 import SlideUpAnimation from '@/components/SlideUpAnimation.vue';
 import { computed } from 'vue';
 import { PROJECTS } from '@/constants';
+import LeftArrowIcon from '@/components/LeftArrowIcon.vue';
 
 const route = useRoute();
 const { isRouteTransition, page } = useRouteTransition();
@@ -29,18 +30,7 @@ const overviewWords = computed(() => {
       <main class="flex flex-col gap-32 p-5">
         <RouterLink :to="{ name: 'projects' }">
           <span class="sr-only">Back to projects</span>
-          <svg
-            viewBox="0 0 64 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-2 w-auto"
-            aria-hidden="true"
-          >
-            <path
-              d="M0 5.99999L10 11.7735L10 0.226493L0 5.99999ZM64 5L9 5L9 7L64 7L64 5Z"
-              fill="black"
-            />
-          </svg>
+          <LeftArrowIcon :is-aria-hidden="true" />
         </RouterLink>
         <div>
           <h1
